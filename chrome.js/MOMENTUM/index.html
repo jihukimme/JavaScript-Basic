@@ -1,0 +1,43 @@
+<!-- Practice
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" /> ====> CSS파일을 HTML로 가져오기
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="hello">
+      <h1 class="sexy-font">Click me!!</h1>
+    </div>
+    <script src="app.js"></script> ===> JS파일을 통해 HTML의 내용 가져오기 (JS파일을 가져올 때는 일반적으로 위에서 가져오지 않고 주로 끝에서 한다.)
+  </body>
+</html> -->
+
+<!-- 실습 시작 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS파일을 HTML로 가져오기 -->
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <a href="https://nomadcoders.co">Go to courses</a>
+    <script src="app.js"></script>
+    <!-- JS파일을 통해 HTML의 내용 가져오기 -->
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box,
+.signup-box {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.signup-box {
+  display: none;
+}
+
+.login-box h2,
+.signup-box h2 {
+  margin: 0;
+  color: #333;
+}
+
+.login-box form,
+.signup-box form {
+  margin-top: 20px;
+}
+
+.login-box input,
+.signup-box input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.login-box button,
+.signup-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fda085;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover,
+.signup-box button:hover {
+  background-color: #f56991;
+}
+
+.login-box p,
+.signup-box p {
+  margin-top: 15px;
+}
+
+.login-box a,
+.signup-box a {
+  text-decoration: none;
+  color: #fda085;
+  font-weight: bold;
+}
+
+.login-box a:hover,
+.signup-box a:hover {
+  text-decoration: underline;
+}
+
+/* 로그인, 회원가입 창 애니메이션 */
+.login-box,
+.signup-box {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.login-box.show,
+.signup-box.show {
+  transform: scale(1);
+  opacity: 1;
+}
