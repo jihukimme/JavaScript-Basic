@@ -1,2 +1,2 @@
-# JavaScript-Baic
+# JavaScript-Basic
 About JavaSript
